@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+    body {
+    	width: 100%;
+    	padding: 0px;
+    	margin: 0px;
+    	height: 100%;
+    }
+    .body{
+    background: blue;
+    height: 100vh;
+    width: 100%;
+}
+.contenedor {
+	width: 100%;
+	height: 100%;
+    margin: 0 auto;	
+}
+.cabecera {
+	width: 100%;
+	height: 48px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    top: 0;
+    margin-bottom: 10px;
+  
+}
+.centro {
+	width: 100%;
+	position: absolute;
+	top: 48px;
+	bottom: 48px;
+    overflow: hidden;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.contenidoInicio {
+	width: 100%;
+	height: 100%;
+    background: white;
+    color: #999999;
+}
+.contenidoInicioSolo {
+	width: 100%;
+	height: 100%;
+	padding-top: 30%;
+    background: white;
+    color: #999999;  
+}
+.titulo{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.inputs {
+	width: 40%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+.pie {
+	width: 100%;
+	height: 48px;
+	position: absolute;
+    bottom: 0;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    margin-top: 3px;
+}
+.contenedorInputs{
+	width: 100%;
+	display: flex;
+
+}
+
+
+.iconoInicio{
+    
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.22);
+    font-size: 72px;
+    text-align: center;
+    font-weight: 100px;
+    color: rgba(0,0,0,0.22);
+}
+
+.textoInicio{
+    font-size: 14px;
+    font-weight: 100px;
+}
+
+.bloquesInicio{
+    height: 96px;
+    width: 96px;
+    display: block;
+    margin-top: -40px;
+}
+
+
+
+
+  @media screen and (max-width: 1024px){
+}
+/* medida para tablets en vertical*/
+@media screen and (max-width: 768px){
+	.contenedorInputs{
+	width: 100%;
+	display: block;
+	margin-left: 10%;
+
+}
+}
+@media screen and (max-width: 400px){
+
+.titulo{font-size: 1rem;}
+}
+  </style>
+  </head>
+  <body>
+    <div  class="body">
+    <div class="contenedor">
+        <div class="cabecera">
+            <header>Agente inmobiliario</header>
+        </div>
+        <div class="centro">
+            <div  class="contenidoInicioSolo"> 
+           		<div class="titulo"> Pasos para el registro de un inmobiliarios </div>
+           		<div class="contenedorInputs">
+           		<div class="inputs">        			Titulo: <input type="text" placeholder="Ingrese nombre"> </div>
+				<div class="inputs">        			Descripcion: <input type="text" placeholder="Ingrese Descripcion"> </div>
+           		<div class="inputs">        			Ubicacion: <input type="text" placeholder="Ingrese Ubicacion"> </div>
+           		<div class="inputs">        			Estado: <input type="text" placeholder="Ingrese Estado"> </div> 
+           		</div>
+           		<div class="contenedorInputs"> 
+           		<div class="inputs">        			Estatus: <select>
+  <option value="1">Activo</option>
+  <option value="0">Inactivo</option>
+  
+</select>  </div>
+           		<div class="inputs">        			Precio: <input type="number" placeholder="Ingrese Precio"> </div>
+           		<div class="inputs">        			Tipo: <select>
+  <option value="Departamento">Departamento</option>
+  <option value="Casa">Casa</option>
+  <option value="Local">Local</option>
+  <option value="Oficina">Oficina</option>
+</select> </div> 
+           		 
+            	<div class="inputs">  <button>Registrar</button> </div>   
+            	</div>       
+            </div>
+        </div>
+        <div class="pie">
+            <footer>Gilertcg desarrollo web</footer>
+        </div>
+    </div>
+</div>
+  </body>
+</html>
