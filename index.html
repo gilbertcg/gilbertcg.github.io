@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Gilbert Chavez portfolio" />
+    <meta name="keywords" content="Gilbert, Chavez, Portfolio" />
+    <meta name="author" content="Gilbert Chavez" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- ========== Title ========== -->
+    <title>Gilbert Chavez</title>
+    <link rel="icon" type="image/png" href="assets/img/PIERINA.png" />
+
+    <meta name="twitter:card" value="summary" />
+    <meta name="google-site-verification" content="2FFPyzsszc6hXseeGFM1mw_crMJZ1CdBNVw3wo5SmT8" />
+    <meta name="description" content="Conoce el trabajo de Gilbert Chavez como desarrollador" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta property="og:title" content="Gilbert Chavez" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.gilbertchavezdev.com/" />
+    <!-- <meta property="og:image" content="https://www.thesocialtop.com/assets/img/testimonial-2.png"/> -->
+    <meta property="og:description" content="Gilbert Chavez web developer" />
+
+    <!-- ========== Favicon Ico ========== -->
+    <!--<link rel="icon" href="fav.ico">-->
+    <!-- ========== STYLESHEETS ========== -->
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Fonts Icon CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link href="assets/css/ionicons.min.css" rel="stylesheet" />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <script>
+      const Http = new XMLHttpRequest();
+      const url =
+        'https://cromatikmedia.com/api/landing/portfolio-gilbert?mensaje=Gilbert | Alguien ha visitado el portafolio';
+      Http.open('GET', url);
+      Http.send();
+      Http.onreadystatechange = (e) => {
+        console.log(Http.responseText);
+      };
+    </script>
+  </head>
+
+  <body>
+    <div class="body-container container-fluid" style="padding: 0px">
+      <a class="menu-btn" href="javascript:void(0)">
+        <i class="ion ion-grid"></i>
+      </a>
+      <div class="row justify-content-end">
+        <!--=================== side menu ====================-->
+        <div class="col-lg-2 col-md-3 col-12 menu_block">
+          <div class="logo_box">
+            <a href="#">
+              <h5>DevFolio</h5>
+            </a>
+          </div>
+          <div class="side_menu_section">
+            <ul class="menu_nav">
+              <li class="active">
+                <a href="#home"> Home </a>
+              </li>
+              <li>
+                <a href="#about"> About me </a>
+              </li>
+              <li>
+                <a href="#projects"> Projects </a>
+              </li>
+              <li>
+                <a href="#portfolio"> Portfolio </a>
+              </li>
+              <li>
+                <a
+                  onclick="muestraMensaje('Alguien ha descargado el curriculum');"
+                  href="https://gilbertchavezdev.com/assets/Gilbert_chavez_cv.pdf"
+                  download="Gilbert_chavez_cv_en.pdf"
+                  target="_blank"
+                >
+                  Curriculum
+                </a>
+              </li>
+
+              <li>
+                <a
+                  onclick="muestraMensaje('Alguien ha buscado whatsapp');"
+                  href="https://wa.me/584244606538"
+                  target="_blank"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="side_menu_bottom_inner">
+            <ul class="social_menu">
+              <li>
+                <a
+                  onclick="muestraMensaje('Alguien ha revisado instagram');"
+                  href="https://instagram.com/gilbertcg95"
+                  target="_blank"
+                >
+                  <i class="ion ion-social-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  onclick="muestraMensaje('Alguien ha buscado whatsapp');"
+                  href="https://wa.me/584244606538"
+                  target="_blank"
+                >
+                  <i class="ion ion-social-whatsapp"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  onclick="muestraMensaje('Alguien ha revisado twitter');"
+                  href="https://twitter.com/gilbertcg95"
+                  target="_blank"
+                >
+                  <i class="ion ion-social-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  onclick="muestraMensaje('Alguien ha revisado linkedin');"
+                  href="https://www.linkedin.com/in/gilbert-chavez-guillen"
+                  target="_blank"
+                >
+                  <i class="ion ion-social-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--=================== content body ====================-->
+        <div class="col-lg-10 col-md-9 col-12 body_block align-content-center body_block align-content-center">
+          <div class="azul" id="home">
+            <div class="text-center">
+              <h1 class="intro-title mb-4">I am Gilbert Chavez</h1>
+              <p class="intro-subtitle">
+                <span class="text-slider-items">Web Developer,Frontend Developer,Backend Developer</span
+                ><strong class="text-slider"></strong>
+              </p>
+            </div>
+          </div>
+
+          <div class="portfolio about" id="about">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="box-shadow-full">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-sm-6 col-md-5">
+                          <div class="about-img mb-4">
+                            <img src="./assets/img/profile.jpeg" class="img-fluid rounded b-shadow-a" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-7">
+                          <div class="about-info">
+                            <p>
+                              <span class="title-s">Name: </span>
+                              <span>Gilbert Chavez</span>
+                            </p>
+                            <p>
+                              <span class="title-s">Profile: </span>
+                              <span>Angular Developer</span>
+                            </p>
+                            <p>
+                              <span class="title-s">Email: </span>
+                              <span>gilbertcg99@gmail.com</span>
+                            </p>
+                            <p>
+                              <span class="title-s">Phone: </span>
+                              <span>(+58) 424-44606538</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="about-me pt-4 pt-md-0">
+                        <div class="title-box-2">
+                          <h4 class="title-left">About me</h4>
+                        </div>
+                        <p class="lead">
+                          Im a angular developer from Valencia Venezuela with more than 3 years of experience in
+                          developing web applications and hybrid mobile applications.
+                        </p>
+                        <p class="lead">
+                          I have knowledge in HTML, CSS, Typescript, Javascript, Angular, Ionic, Node.js, MongoDb,
+                          Mysql, Git, Scrum, Linux, Nginx and intermediate english.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio" id="projects">
+            <div class="container-fluid text-center" style="padding: 0px">
+              <h3>Personal projects</h3>
+              <!--=================== masaonry portfolio start====================-->
+              <div class="grid img-container justify-content-center no-gutters">
+                <div class="grid-sizer col-sm-12 col-md-6 col-lg-3"></div>
+                <div class="grid-item branding col-sm-12 col-md-6 col-lg-3">
+                  <a
+                    onclick="muestraMensaje('Alguien ha revisado condominios');"
+                    href="https://condominios.cromatikmedia.com"
+                    target="_blank"
+                    title="Condominio"
+                  >
+                    <div class="project_box_one">
+                      <img src="assets/img/portfolio/condominio.png" />
+                      <div class="product_info">
+                        <div class="product_info_text">
+                          <div class="product_info_text_inner">
+                            <i class="ion ion-plus"></i>
+                            <h4>Condominio</h4>
+                            <p>Node.js, Angular, MongoDb, express, Ionic</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="grid-item branding architecture col-sm-12 col-md-6">
+                  <a
+                    onclick="muestraMensaje('Alguien ha revisado move');"
+                    href="https://move.cromatikmedia.com"
+                    target="_blank"
+                    title="Move"
+                  >
+                    <div class="project_box_one">
+                      <img src="assets/img/portfolio/move.png" alt="pro1" />
+                      <div class="product_info">
+                        <div class="product_info_text">
+                          <div class="product_info_text_inner">
+                            <i class="ion ion-plus"></i>
+                            <h4>Move</h4>
+                            <p>Node.js, Angular, MongoDb, express, Ionic</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid-item branding photography col-sm-12 col-md-6 col-lg-3">
+                  <a
+                    onclick="muestraMensaje('Alguien ha revisado cromatik');"
+                    href="https://cromatikmedia.com"
+                    target="_blank"
+                    title="CromatikMedia"
+                  >
+                    <div class="project_box_one">
+                      <img src="assets/img/cromatik.png" alt="pro1" />
+                      <div class="product_info">
+                        <div class="product_info_text">
+                          <div class="product_info_text_inner">
+                            <i class="ion ion-plus"></i>
+                            <h4>CromatikMedia</h4>
+                            <p>Angular and Node.js</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid-item architecture design col-sm-12 col-md-6 col-lg-3">
+                  <a
+                    onclick="muestraMensaje('Alguien ha revisado music');"
+                    href="https://music.gilbertchavezdev.com"
+                    target="_blank"
+                    title="In construccion"
+                  >
+                    <div class="project_box_one">
+                      <img src="assets/img/violin.png" alt="pro1" />
+                      <div class="product_info">
+                        <div class="product_info_text">
+                          <div class="product_info_text_inner">
+                            <i class="ion ion-plus"></i>
+                            <h4>GILBERT CHAVEZ VIOLIN</h4>
+                            <p>HTML, CSS, javascript</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!--=================== masaonry portfolio end====================-->
+            </div>
+          </div>
+          <div class="portfolio" id="portfolio">
+            <div class="container-fluid text-center">
+              <h3>Portfolio</h3>
+              <div class="portfolio gutters grid img-container">
+                <div class="grid-sizer col-sm-12 col-md-6 col-lg-3"></div>
+                <div class="grid-item branding architecture col-md-6 col-lg-3">
+                  <a
+                    onclick="muestraMensaje('Alguien ha revisado CRM');"
+                    href="https://crm.pgs-consulting.com"
+                    target="_blank"
+                    title="PGS"
+                  >
+                    <div class="project_box_one">
+                      <img src="assets/img/prospects.png" alt="pro1" />
+                      <div class="product_info">
+                        <div class="product_info_text">
+                          <div class="product_info_text_inner">
+                            <i class="ion ion-plus"></i>
+                            <h4>Prospects system</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid-item branding architecture col-md-6 col-lg-3">
+                  <a
+                    onclick="muestraMensaje('Alguien ha revisado ourinnergift');"
+                    href="https://ourinnergift.com"
+                    target="_blank"
+                    title="Our inner gift"
+                  >
+                    <div class="project_box_one">
+                      <img src="assets/img/ourinner.png" alt="pro1" />
+                      <div class="product_info">
+                        <div class="product_info_text">
+                          <div class="product_info_text_inner">
+                            <i class="ion ion-plus"></i>
+                            <h4>Our inner gift</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid-item branding architecture col-md-6 col-lg-3">
+                  <a
+                    onclick="muestraMensaje('Alguien ha revisado cromatik');"
+                    href="https://cromatikmedia.com"
+                    target="_blank"
+                    title="Cromaitik"
+                  >
+                    <div class="project_box_one">
+                      <img src="assets/img/cromatik.png" alt="pro1" />
+                      <div class="product_info">
+                        <div class="product_info_text">
+                          <div class="product_info_text_inner">
+                            <i class="ion ion-plus"></i>
+                            <h4>Cromatikmedia</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid-item branding architecture col-md-6 col-lg-3">
+                  <a
+                    onclick="muestraMensaje('Alguien ha revisado edgedx');"
+                    href="https://edgedx.net"
+                    target="_blank"
+                    title="EdgeDx"
+                  >
+                    <div class="project_box_one">
+                      <img src="assets/img/edge.png" alt="pro1" />
+                      <div class="product_info">
+                        <div class="product_info_text">
+                          <div class="product_info_text_inner">
+                            <i class="ion ion-plus"></i>
+                            <h4>EdgeDx</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid-item branding architecture col-md-6 col-lg-3">
+                  <a
+                    onclick="muestraMensaje('Alguien ha revisado thesocialtop');"
+                    href="https://thesocialtop.com"
+                    target="_blank"
+                    title="The social top"
+                  >
+                    <div class="project_box_one">
+                      <img src="assets/img/tst.png" alt="pro1" />
+                      <div class="product_info">
+                        <div class="product_info_text">
+                          <div class="product_info_text_inner">
+                            <i class="ion ion-plus"></i>
+                            <h4>The social top</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid-item branding architecture col-md-6 col-lg-3">
+                  <a
+                    onclick="muestraMensaje('Alguien ha revisado portfolio gabriel');"
+                    href="https://gabrielzambranog.com"
+                    target="_blank"
+                    title="Gabriel Zambrano"
+                  >
+                    <div class="project_box_one">
+                      <img src="assets/img/pipo.png" alt="pro1" />
+                      <div class="product_info">
+                        <div class="product_info_text">
+                          <div class="product_info_text_inner">
+                            <i class="ion ion-plus"></i>
+                            <h4>Gabriel Zambrano</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid-item branding architecture col-md-6 col-lg-3">
+                  <a
+                    onclick="muestraMensaje('Alguien ha revisado portfolio paola');"
+                    href="https://paolagcarvallo.com"
+                    target="_blank"
+                    title="Paola portfolio"
+                  >
+                    <div class="project_box_one">
+                      <img src="assets/img/logoPaola.png" alt="pro1" />
+                      <div class="product_info">
+                        <div class="product_info_text">
+                          <div class="product_info_text_inner">
+                            <i class="ion ion-plus"></i>
+                            <h4>Portfolio Paola</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid-item branding architecture col-md-6 col-lg-3">
+                  <a href="https://amigafreelance.com" target="_blank" title="Amiga freelance">
+                    <div class="project_box_one">
+                      <img src="assets/img/amiga.png" alt="pro1" />
+                      <div class="product_info">
+                        <div class="product_info_text">
+                          <div class="product_info_text_inner">
+                            <i class="ion ion-plus"></i>
+                            <h4>Amiga freelance</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid-item branding architecture col-md-6 col-lg-3">
+                  <a href="https://tubosylaminasinoxidables.com" target="_blank" title="Tubos y laminas inoxidables">
+                    <div class="project_box_one">
+                      <img src="assets/img/tubos.png" alt="pro1" />
+                      <div class="product_info">
+                        <div class="product_info_text">
+                          <div class="product_info_text_inner">
+                            <i class="ion ion-plus"></i>
+                            <h4>Tubos y laminas inoxidables</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid-item branding col-sm-12 col-md-6 col-lg-3">
+                  <a
+                    onclick="muestraMensaje('Alguien ha revisado move');"
+                    href="https://move.cromatikmedia.com"
+                    target="_blank"
+                    title="MOVE"
+                  >
+                    <div class="project_box_one">
+                      <img src="assets/img/MOVE.png" alt="pro1" />
+                      <div class="product_info">
+                        <div class="product_info_text">
+                          <div class="product_info_text_inner">
+                            <i class="ion ion-plus"></i>
+                            <h4>Move</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid-item branding architecture col-md-6 col-lg-3">
+                  <a
+                    onclick="muestraMensaje('Alguien ha revisado condominios');"
+                    href="https://condominios.cromatikmedia.com"
+                    target="_blank"
+                    title="Condominio"
+                  >
+                    <div class="project_box_one">
+                      <img src="assets/img/cond.png" alt="pro1" />
+                      <div class="product_info">
+                        <div class="product_info_text">
+                          <div class="product_info_text_inner">
+                            <i class="ion ion-plus"></i>
+                            <h4>Condominio</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--=================== content body end ====================-->
+      </div>
+    </div>
+
+    <!-- jquery -->
+    <script>
+      function muestraMensaje(mensaje) {
+        const Http = new XMLHttpRequest();
+        const url = 'https://cromatikmedia.com/api/landing/portfolio-gilbert?mensaje=Gilbert | ' + mensaje;
+        Http.open('GET', url);
+        Http.send();
+        Http.onreadystatechange = (e) => {
+          console.log(Http.responseText);
+        };
+      }
+    </script>
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--Portfolio Filter-->
+    <script src="assets/js/imgloaded.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <!--Counter-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- WOW JS -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Custom js -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/typed.min.js"></script>
+  </body>
+</html>

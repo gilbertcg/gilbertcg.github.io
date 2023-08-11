@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: gilbertchavezdev.com
+Token: 2562d6304c997dc3b29d1a127930a9e982ee07b8b449862b0336c5a4dd252882
