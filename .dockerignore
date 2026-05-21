@@ -5,6 +5,5 @@ node_modules
 gulpfile.js
 package.json
 README.md
-Dockerfile
 .dockerignore
 gilmapi.yml
