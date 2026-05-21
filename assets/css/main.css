@@ -27,7 +27,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,500");
 /* ----------------Text Fonts ------------------- */
 body {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.6;
   font-weight: 300;
   font-family: "Montserrat", sans-serif;
@@ -43,20 +43,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, .h1 {
-  font-size: 2.5rem;
-  margin-bottom: 25px;
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
   color: white;
 }
 
 h2, .h2 {
-  font-size: 38px;
-  margin-bottom: 25px;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 h3, .h3 {
-  font-size: 36px;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
 }
 
 h4, .h4 {
@@ -75,10 +75,10 @@ h6, .h6 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 1rem;
   font-family: "Montserrat", sans-serif;
-  margin: 0 0 15px;
-  line-height: 2.1;
+  margin: 0 0 1rem;
+  line-height: 1.6;
   font-weight: 300;
   color: #9c9ca9;
 }
@@ -188,22 +188,35 @@ img {
 
 @media (max-width: 768px) {
   h1, .h1 {
-    font-size: 28px;
-    line-height: 40px;
-    margin-bottom: 15px;
-    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 1.3;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
   }
 
   h2, .h2 {
-    font-size: 24px;
-    line-height: 40px;
-    margin-bottom: 15px;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
   }
 
   h3, .h3 {
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 15px;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    margin-bottom: 0.75rem;
+  }
+
+  .section-heading {
+    font-size: 1.25rem;
+    margin: 2rem 0 1rem;
+  }
+
+  .intro-title {
+    font-size: 1.75rem;
+  }
+
+  .intro-subtitle {
+    font-size: 1rem;
   }
 
   h4, .h4 {
@@ -2538,10 +2551,63 @@ h5{
   display: none;
 }
 
-.intro-subtitle{
-color: white;
-font-size: 2rem;
+.intro-title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
 }
-.row{
-  margin-right: 0px !important;
+
+.intro-subtitle {
+  color: white;
+  font-size: 1.125rem;
+  margin-bottom: 0;
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #18181c;
+  margin: 2.5rem 0 1.25rem;
+  text-align: center;
+}
+
+.portfolio-group + .portfolio-group .section-heading {
+  margin-top: 3rem;
+}
+
+.about-me .section-heading {
+  text-align: left;
+  margin-top: 0;
+}
+
+.about-info p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.about-info .label {
+  display: inline-block;
+  min-width: 4.5rem;
+  font-weight: 600;
+  color: #18181c;
+  font-size: 0.875rem;
+}
+
+.about-img {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  max-width: 220px;
+}
+
+.about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
+}
+
+.row {
+  margin-right: 0 !important;
 }
