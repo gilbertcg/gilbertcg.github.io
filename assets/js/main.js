@@ -5,16 +5,25 @@ $(document).ready(function () {
     $('body').toggleClass('sidebar_closed');
   });
 
-  var $grid = $('.grid').isotope({
-    itemSelector: '.grid-item',
-    percentPosition: true,
-    masonry: {
-      columnWidth: '.grid-sizer',
-    },
+  $('.project-grid:not(.project-grid--square)').each(function () {
+    var $grid = $(this);
+
+    $grid.isotope({
+      itemSelector: '.grid-item',
+      percentPosition: true,
+      masonry: {
+        columnWidth: '.grid-sizer',
+        gutter: 30,
+      },
+    });
+
+    $grid.imagesLoaded().progress(function () {
+      $grid.isotope('layout');
+    });
   });
 
-  $grid.imagesLoaded().progress(function () {
-    $grid.isotope('layout');
+  $(window).on('load resize', function () {
+    $('.project-grid:not(.project-grid--square)').isotope('layout');
   });
 
   if ($('.text-slider').length === 1) {

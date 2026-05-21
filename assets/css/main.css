@@ -2087,6 +2087,104 @@ img {
   margin-bottom: 30px;
 }
 
+/* Masonry project grid (Isotope + CSS fallback widths) */
+.project-grid {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px 30px;
+}
+
+.project-grid .grid-sizer,
+.project-grid .grid-item {
+  box-sizing: border-box;
+}
+
+.project-grid .grid-sizer {
+  visibility: hidden;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.project-grid .grid-item {
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+.project-grid .grid-item--wide {
+  width: 100%;
+}
+
+.project-grid a {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .project-grid .grid-sizer,
+  .project-grid .grid-item {
+    width: 50%;
+  }
+
+  .project-grid .grid-item--wide {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .project-grid .grid-sizer,
+  .project-grid .grid-item {
+    width: 25%;
+  }
+
+  .project-grid .grid-item--wide {
+    width: 50%;
+  }
+}
+
+/* Personal projects: same look as ProtosTech — equal squares in a row */
+.project-grid--square {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.project-grid--square .grid-sizer {
+  display: none;
+}
+
+.project-grid--square .grid-item {
+  width: 100% !important;
+  margin-bottom: 0 !important;
+  position: static !important;
+  left: auto !important;
+  top: auto !important;
+  transform: none !important;
+}
+
+.project-grid--square .project_box_one {
+  aspect-ratio: 1 / 1;
+}
+
+.project-grid--square .project_box_one img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .project-grid--square {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .project-grid--square {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 /*  ----------------------------------------------------
 7 counter
 -------------------------------------------------------- */
@@ -2575,9 +2673,14 @@ h5{
   margin-top: 3rem;
 }
 
-.about-me .section-heading {
+.about-me .section-heading,
+.about-info .section-heading {
   text-align: left;
   margin-top: 0;
+}
+
+.about-info .section-heading {
+  margin-bottom: 1rem;
 }
 
 .about-info p {
