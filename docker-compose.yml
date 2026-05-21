@@ -1,0 +1,6 @@
+# Prueba local del sitio (sin Traefik)
+services:
+  portfolio:
+    build: .
+    ports:
+      - "8080:80"
